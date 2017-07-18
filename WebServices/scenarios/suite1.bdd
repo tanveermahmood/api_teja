@@ -1,0 +1,30 @@
+
+
+SCENARIO: Post Order
+META-DATA: {"description":"Post Order Test Scenario","groups":["SMOKE"],key:"orders.order"}
+	
+	Given User post new order '${clientName}' with amount '${amount}'
+	Then response should have status 'CREATED'
+	And Order is created with id 'newID'
+	Then Verify Order details '${newID}'
+	And Store client details 'ob'
+	Then verify client details 'ob'
+END
+
+
+SCENARIO: Delete Order
+META-DATA: {"description":"delete the order ","groups":["SMOKE"]}
+	Given Order with id '${newID}' is present
+	When User deletes the order '${newID}'
+	Then response should have status 'OK'
+	
+END
+
+
+SCENARIO: Get All Orders
+META-DATA: {"description":"Get all the orders present in the page","groups":["SMOKE"]}
+	Given Get all the order details
+	Then response should have status 'OK'
+		
+END
+

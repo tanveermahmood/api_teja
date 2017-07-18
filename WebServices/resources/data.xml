@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<orders>
+		<order>
+			<clientName>Tanveer1</clientName>
+			<amount>101</amount>
+		</order>
+		<order>
+			<clientName>Tanveer2</clientName>
+			<amount>102</amount>
+		</order>
+		<order>
+			<clientName>Tanveer3</clientName>
+			<amount>103</amount>
+		</order>
+		<order>
+			<clientName>Tanveer4</clientName>
+			<amount>104</amount>
+		</order>
+		<order>
+			<clientName>Tanveer5</clientName>
+			<amount>105</amount>
+		</order>
+	</orders>
+</root>
